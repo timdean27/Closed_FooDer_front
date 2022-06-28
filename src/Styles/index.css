@@ -1,6 +1,7 @@
-html{
+html, body {
   margin: 0;
   padding: 0;
+  text-align: center;
 }
 
 .primary-btn {
@@ -14,6 +15,21 @@ html{
 .primary-btn:hover{
   background-color: red;
 }
+
+.submit-btn{
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  background-color: white;
+  text-transform: uppercase;
+  border: solid 2px black;
+}
+.submit-btn:hover{
+  color: gray;
+  background-color: white;
+  border: solid 2px gray;
+}
+
 
 body{
   text-align: center;
@@ -45,6 +61,13 @@ nav .nav-btn {
   margin: 10px;
 }
 
+nav .nav-btn:hover{
+  background-color: red;
+}
+nav .nav-btn:disabled{
+  background-color: gray;
+  color: lightgray;
+}
 
 /* Home Page Styles */
 
@@ -53,3 +76,168 @@ nav .nav-btn {
   height: 100vh;
   background-color: lightgray;
 }
+
+
+/* Auth Modal Styles */
+
+.auth-modal {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 360px;
+  height: 600px;
+  background-color: orange;
+  border-radius: 10px;
+  padding: 40px;
+}
+.auth-modal .close-icon {
+  float: right;
+  font-size: 25px;
+}
+.auth-modal .close-icon:hover {
+  float: right;
+  font-size: 25px;
+  color: red;
+}
+
+.auth-modal form{
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-modal input[type=password],
+.auth-modal input[type=email]{
+  padding: 8px;
+  margin: 8px;
+  font-size: 15px;
+}
+
+
+/* OnBoarding Page */
+.onboarding{
+  border-top: solid 3px orange;
+}
+.onboarding form {
+  display: flex;
+  justify-content: center;
+}
+
+.onboarding form section{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 35%;
+  text-align: start;
+}
+
+.onboarding form label {
+  margin: 10px 0px;
+}
+
+.onboarding form input{
+  padding: 15px 30px;
+  margin: 10px 0;
+  font-size: 15px;
+  border: solid 2px lightgray;
+  border-radius: 10px;
+}
+
+.onboarding form .multiple-input-container{
+  display: flex;
+  flex-direction: row;
+
+}
+.onboarding form .multiple-input-container input {
+  margin-right: 10px;
+}
+.onboarding form .multiple-input-container input[type="radio"]{
+ display: none;
+}
+.onboarding form .multiple-input-container label {
+  padding: 10px;
+  border: solid 2px black;
+  border-radius: 10px;
+  transition: all 0.3s;
+  margin-right: 10px;
+}
+
+.onboarding form input[type="radio"]:checked + label{
+  border: solid 2px red;
+}
+
+.onboarding form input[type="submit"]:hover{
+ background-color: seagreen;
+}
+
+.onboarding form input[type="submit"]:active{
+  background-color:red;
+ }
+
+ .onboarding from input[type="number"]{
+  width: 10%;
+ }
+
+ .onboarding form .photo-container img{
+  width: 100%;
+ }
+
+
+ /* Dashboard Style page */
+.dashboard{
+  display:flex;
+  justify-content: space-between;
+}
+
+.swipe-container{
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+ .swipe {
+  position: absolute;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  max-width: 20vw;
+  height: 50vh;
+}
+
+.card {
+  background-color: white;
+  width: 20vw;
+  max-width: 20vw;
+  height: 50vh;
+  box-shadow: 0px 0px 60px 0px rgba(0,0,0,0.30);
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+.card-header{
+  background-color: white;
+  color: black;
+  width: 30%;
+  height:20%
+}
+.card h3 {
+  margin-top: 0;
+}
+
+.swipe-info{
+  position: absolute;
+  bottom: 0;
+  padding:15px;
+}
+
+/* Chat Container */
