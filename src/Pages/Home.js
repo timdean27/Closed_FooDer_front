@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
 import Nav from "../Components/Nav";
 import AuthModal from "../Components/AuthModal";
 const Home = () => {
