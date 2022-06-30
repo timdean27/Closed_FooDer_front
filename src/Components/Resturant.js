@@ -28,8 +28,10 @@ const Resturant = ({restaurantdb}) => {
       };
 
       const lowerCount = () => {
-        setcardDataLength(cardDataLength-1)
-        console.log("cardDataLength2 inside lower count funciton", cardDataLength)
+        console.log("cardDataLength2 inside lower count funciton", typeof(cardDataLength),cardDataLength)
+        let num = Promise.all([...cardDataLength])
+        setcardDataLength(num -1)
+        console.log("cardDataLength3 inside lower count funciton after set -1", cardDataLength)
         console.log("restaurantdb inside lower count funciton", restaurantdb)
         };
     
